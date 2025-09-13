@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karmine Corp - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Vidéo de fond -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline>
+            <source src="https://github.com/DavidTaroz/logo/raw/refs/heads/main/KC1%20(1).mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+    </div>
+    <div class="overlay"></div>
+
+    <!-- Menu de contrôle (hover coin haut-gauche) -->
+    <div class="widget-menu" id="widget-menu">
+        <div class="menu-trigger-area"></div>
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="menu-icon">⚙️</span>
+        </div>
+        <div class="menu-content" id="menu-content">
+            <h3>Contrôles du dashboard</h3>
+            
+            <!-- Section Affichage -->
+            <div class="menu-section">
+                <h4 class="menu-section-title">Affichage</h4>
+                <div class="menu-item">
+                    <label class="switch">
+                        <input type="checkbox" id="toggle-live" checked>
+                        <span class="slider"></span>
+                    </label>
+                    <span class="menu-label">Match en cours</span>
+                </div>
+                <div class="menu-item">
+                    <label class="switch">
+                        <input type="checkbox" id="toggle-upcoming" checked>
+                        <span class="slider"></span>
+                    </label>
+                    <span class="menu-label">Matchs à venir</span>
+                </div>
+                <div class="menu-item">
+                    <label class="switch">
+                        <input type="checkbox" id="toggle-results" checked>
+                        <span class="slider"></span>
+                    </label>
+                    <span class="menu-label">Derniers résultats</span>
+                </div>
+            </div>
+
+            <!-- Section Actions -->
+            <div class="menu-section">
+                <h4 class="menu-section-title">Actions</h4>
+                <div class="menu-action">
+                    <button class="refresh-button" id="force-refresh">
+                        <span class="refresh-icon">🔄</span>
+                        <span class="refresh-text">Actualiser</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Widgets -->
+    <div class="widget live-matches" id="live-matches-widget">
+        <h2>Match en cours</h2>
+        <div id="live-matches-content" class="matches-container"><div class="loader"></div></div>
+        <div class="update-indicator" id="live-update"></div>
+    </div>
+    <div class="widget upcoming-matches" id="upcoming-matches-widget">
+        <h2>Matchs à venir</h2>
+        <div id="upcoming-matches-content" class="matches-container"><div class="loader"></div></div>
+        <div class="update-indicator" id="upcoming-update"></div>
+    </div>
+    <div class="widget recent-results" id="recent-results-widget">
+        <h2>Derniers résultats</h2>
+        <div id="recent-results-content" class="matches-container"><div class="loader"></div></div>
+        <div class="update-indicator" id="results-update"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
