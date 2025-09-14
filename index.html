@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karmine Corp - Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- CHEMINS ABSOLUS pour Cloudflare Pages -->
+    <link rel="stylesheet" href="/styles.css"> 
 </head>
 <body>
     <!-- Vidéo de fond -->
     <div class="video-background">
-        <video autoplay muted loop playsinline preload="metadata">
+        <!-- Lien direct vers le MP4 pour éviter les problèmes de Git LFS -->
+        <video autoplay muted loop playsinline preload="auto">
             <source src="https://github.com/DavidTaroz/KC-Widget/raw/refs/heads/main/kcvid.mp4" type="video/mp4">
             Votre navigateur ne supporte pas la lecture de vidéos.
         </video>
@@ -81,6 +83,7 @@
         <div class="update-indicator" id="results-update"></div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- CHEMINS ABSOLUS pour Cloudflare Pages -->
+    <script src="/script.js"></script>
 </body>
 </html>
