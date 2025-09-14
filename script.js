@@ -33,19 +33,19 @@ const fallbackUpcomingMatches = [
     {
         game: "Valorant",
         opponent: "Fnatic",
-        date: "2025-09-13",
+        date: "2025-09-14",
         time: "20:00"
     },
     {
         game: "Rocket League",
         opponent: "BDS",
-        date: "2025-09-14",
+        date: "2025-09-15",
         time: "19:00"
     },
     {
         game: "League of Legends",
         opponent: "Team Vitality",
-        date: "2025-09-15",
+        date: "2025-09-16",
         time: "18:00"
     }
 ];
@@ -56,21 +56,21 @@ const fallbackRecentResults = [
         opponent: "MAD Lions",
         score: "2-1",
         result: "win",
-        date: "2025-09-12"
+        date: "2025-09-13"
     },
     {
         game: "Valorant",
         opponent: "Navi",
         score: "13-11",
         result: "win",
-        date: "2025-09-11"
+        date: "2025-09-12"
     },
     {
         game: "Rocket League",
         opponent: "Dignitas",
         score: "3-4",
         result: "loss",
-        date: "2025-09-10"
+        date: "2025-09-11"
     }
 ];
 
