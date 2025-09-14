@@ -52,14 +52,14 @@ html, body {
     object-fit: cover;
 }
 
-/* Overlay - MODIFIÉ pour rendre le fond 25% plus visible */
+/* Overlay - Fond rendu 25% plus visible */
 .overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* Réduit de 0.5 à 0.375 */
+    background-color: rgba(0, 0, 0, 0.375);
     z-index: -1;
 }
 
@@ -100,7 +100,6 @@ html, body {
     -webkit-backdrop-filter: blur(20px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    /* Masqué par défaut */
     opacity: 0;
     visibility: hidden;
     transform: scale(0.8) translateY(-10px);
